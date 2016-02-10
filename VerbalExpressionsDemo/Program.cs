@@ -45,17 +45,13 @@ namespace VerbalExpressionsDemo
 
 
             var url = "http://www.exceptionnotfound.net";
-
             var email = "test@example.com";
-
             var invalidEmail = "test@example";
-
             var phone = "(123) 456-7890";
 
             Assert.IsTrue(urlExp.Test(url), "The URL is not valid!");
             Assert.IsTrue(emailExp.Test(email), "The email is not valid!");
             Assert.IsTrue(phoneExp.Test(phone), "The phone number is invalid.");
-
             Assert.IsTrue(emailExp.Test(invalidEmail), "The email is not valid!");
         }
     }
